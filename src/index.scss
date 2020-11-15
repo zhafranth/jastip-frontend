@@ -1,0 +1,107 @@
+$primary: #065c6f;
+
+.App {
+  padding: 0 12vw;
+  font-family: "montserrat";
+  font-size: 16px;
+  color: $primary;
+  .title {
+    font-size: 2.7rem;
+    color: $primary;
+    font-weight: 700;
+    span {
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    label {
+      margin-right: 1.5rem;
+      input {
+        margin-left: 1rem;
+        border-radius: 10px;
+        outline: none;
+        padding: 5px 0.9rem;
+        border-color: $primary;
+        border-width: 1px;
+      }
+    }
+    .btn-submit {
+      border-radius: 30px;
+      color: #ffffff;
+      background-color: $primary;
+      border: none;
+      padding: 0 1.2rem;
+      &:hover {
+        background-color: #13697c;
+        cursor: pointer;
+      }
+    }
+  }
+  .card-style {
+    width: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    transition: transform 0.5 ease;
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .button-del {
+        background-color: #df2f63;
+        border-radius: 5px;
+        padding: 4px 0.7rem;
+        color: #ffffff;
+        &:hover {
+          background-color: #f04e7e;
+        }
+      }
+      .button-upd {
+        background-color: #2f84df;
+        border-radius: 5px;
+        padding: 4px 0.7rem;
+        color: #ffffff;
+        &:hover {
+          background-color: #499ef8;
+        }
+      }
+    }
+  }
+  .import-section {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    margin: 2rem auto;
+    .btn-import {
+      cursor: pointer;
+      font-size: 1rem;
+      background-color: #13697c;
+      color: #ffffff;
+      font-weight: normal;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      padding: 0.4rem 1.2rem;
+      &:hover {
+        background-color: #197286;
+      }
+      span {
+        font-weight: bold;
+      }
+      @media (max-width: 1175px) {
+        font-size: 0.8rem;
+        padding: 0.4 0.8rem;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      width: 50vw;
+    }
+  }
+}
